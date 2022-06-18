@@ -65,7 +65,6 @@ document.addEventListener("DOMContentLoaded",()=>{
 	this.template_carta.getElementById("num3").textContent="UNO";
 	this.template_carta.getElementById("centro").style.background="#b0160b";
 	this.template_carta.getElementById("centro").style.color="#c3c80d";
-	this.template_carta.getElementById("centro").setAttribute("title","Monto");
 	this.content_monto.appendChild(this.template_carta.cloneNode(true));
 	this.carta_monto=document.getElementsByName("cartas_monto")[0];
 	this.carta_monto.addEventListener("click",()=>{
