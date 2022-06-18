@@ -7,7 +7,9 @@
 .content-inicio,.content-juego{
 	width: 100vw;
 	height: 100vh;
+	display: flex;
 	justify-content: center;
+	align-items: center;
 	position: relative;
 }
 .content-inicio .content-menu{
@@ -84,7 +86,8 @@
 	justify-content: center;
 	align-content: center;
 }
-.content-juego .tablero .cartas .carta{
+.carta{
+	max-width: 50px;
 	padding: 20px;
 	position: relative;
 	margin: 10px;
@@ -97,31 +100,31 @@
 	transition: 0.2s all ease;
 	cursor: pointer;
 }
-.content-juego .tablero .cartas .carta:hover{
+.carta:hover{
 	transform: scale(1.1);
 }
-.content-juego .tablero .cartas .carta .num1{
+.carta .num1{
 	position: absolute;
 	font-size: 18px;
 	font-weight: bold;
 	left: 5px;
 	top: 5px;
 }
-.content-juego .tablero .cartas .carta .num2{
+.carta .num2{
 	position: absolute;
 	font-size: 18px;
 	font-weight: bold;
 	right: 5px;
 	bottom: 5px;
 }
-.content-juego .tablero .cartas .carta .centro{
+.carta .centro{
 	font-size: 30px;
 	background: #ffffff;
-	padding: 10px;
+	padding: 15px 10px  15px  10px;
 	border-radius: 50%;
 	transform: rotateZ(45deg);
 }
-.content-juego .tablero .cartas .carta .centro .num3{
+.carta .centro .num3{
 	transform: rotateZ(-45deg);
 	font-weight: bold;
 }
