@@ -1,6 +1,7 @@
 class Diccionario{
 
 	static max_jugadores=4;
+	static num_cartas=7;
 
 	static colores=[
 		"#473ff3", // azul

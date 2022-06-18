@@ -16,7 +16,6 @@
 	width: 500px;
 	height: 100px;
 	padding: 30px;
-	margin-top: 50px;
 	background: #f5f5f5;
 	border: 1px solid #c2c2c2;
 	display: inline-grid;
@@ -35,7 +34,10 @@
 	border: 1px solid #c2c2c2;
 	padding: 5px;
 }
-
+.content-juego .content-turno{
+	font-size: 20px;
+	margin: 20px;
+}
 .content-juego .tablero-izq{
 	width: 110px;
 	height: 80vh;
@@ -69,9 +71,11 @@
 .content-juego .tablero{
 	border: 2px solid #c2c2c2;
 	position: absolute;
+	padding-top: 20px;
 }
 .content-juego .tablero .num_cartas{
-	position: fixed;
+	position: absolute;
+	top: 0px;
 	font-size: 20px;
 	z-index: 1;
 }
@@ -83,8 +87,7 @@
 }
 .content-juego .tablero .cartas_horizontal{
 	display: flex;
-	justify-content: center;
-	align-content: center;
+	justify-content: space-around;
 }
 .carta{
 	max-width: 50px;

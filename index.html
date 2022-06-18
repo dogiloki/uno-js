@@ -9,10 +9,10 @@
 </head>
 <body>
 
-	<section class="content-inicio" style="display: none;">
+	<section class="content-inicio" id="content-inicio" style="display: ;">
 		<div class="content-menu">
-			<input type="text" class="caja" placeholder="Número de jugadores (1-4)">
-			<button class="btn" id="btn-iniciar">INICIAR</button>
+			<input type="text" class="caja" id="caja-nombre" placeholder="Cantidad de jugadores">
+			<button class="btn" id="btn-jugar">JUGAR</button>
 		</div>
 	</section>
 
@@ -33,11 +33,13 @@
 		</div>
 	</template>
 
-	<section class="content-juego" id="content-juego">
+	<section class="content-juego" id="content-juego" style="display: none;">
 		<div id="content-monto"></div>
 		<div id="content-jugada"></div>
+		<div class="content-turno" id="content-turno"></div>
 	</section>
 
+	<script type="text/javascript" src="/socket.io/socket.io.js"></script>
 	<script type="text/javascript" src="js/App.js"></script>
 
 </body>
