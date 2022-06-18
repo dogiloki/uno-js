@@ -1,0 +1,127 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	font-family: arial;
+	box-sizing: content-box;
+}
+.content-inicio,.content-juego{
+	width: 100vw;
+	height: 100vh;
+	justify-content: center;
+	position: relative;
+}
+.content-inicio .content-menu{
+	width: 500px;
+	height: 100px;
+	padding: 30px;
+	margin-top: 50px;
+	background: #f5f5f5;
+	border: 1px solid #c2c2c2;
+	display: inline-grid;
+}
+.content-inicio .content-menu .caja{
+	padding: 5px;
+	border: 1px solid #c2c2c2;
+	font-size: 20px;
+}
+.content-inicio .content-menu .btn{
+	margin-top: 20px;
+	font-size: 20px;
+	text-align: center;
+	cursor: pointer;
+	color: #353535;
+	border: 1px solid #c2c2c2;
+	padding: 5px;
+}
+
+.content-juego .tablero-izq{
+	width: 110px;
+	height: 80vh;
+	left: 0px;
+	top: 10vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+.content-juego .tablero-der{
+	width: 110px;
+	height: 80vh;
+	right: 0px;
+	top: 10vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+.content-juego .tablero-abajo{
+	width : 80vw;
+	left: 10vw;
+	bottom: 0px;
+	overflow-y: hidden;
+	overflow-x: scroll;
+}
+.content-juego .tablero-arriba{
+	width : 80vw;
+	left: 10vw;
+	top: 0px;
+	overflow-y: hidden;
+	overflow-x: scroll;
+}
+.content-juego .tablero{
+	border: 2px solid #c2c2c2;
+	position: absolute;
+}
+.content-juego .tablero .num_cartas{
+	position: fixed;
+	font-size: 20px;
+	z-index: 1;
+}
+.content-juego .tablero .num_cartas::before{
+	content: "Cartas: ";
+}
+.content-juego .tablero .cartas_vertical{
+	display: block;
+}
+.content-juego .tablero .cartas_horizontal{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+.content-juego .tablero .cartas .carta{
+	padding: 20px;
+	position: relative;
+	margin: 10px;
+	border: 1px solid #c2c2c2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #f5f5f5;
+	border-radius: 5px;
+	transition: 0.2s all ease;
+	cursor: pointer;
+}
+.content-juego .tablero .cartas .carta:hover{
+	transform: scale(1.1);
+}
+.content-juego .tablero .cartas .carta .num1{
+	position: absolute;
+	font-size: 18px;
+	font-weight: bold;
+	left: 5px;
+	top: 5px;
+}
+.content-juego .tablero .cartas .carta .num2{
+	position: absolute;
+	font-size: 18px;
+	font-weight: bold;
+	right: 5px;
+	bottom: 5px;
+}
+.content-juego .tablero .cartas .carta .centro{
+	font-size: 30px;
+	background: #ffffff;
+	padding: 10px;
+	border-radius: 50%;
+	transform: rotateZ(45deg);
+}
+.content-juego .tablero .cartas .carta .centro .num3{
+	transform: rotateZ(-45deg);
+	font-weight: bold;
+}
