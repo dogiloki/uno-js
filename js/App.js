@@ -178,7 +178,7 @@ function cambiarTurno(){
 			this.turno=this.caja_nombre.value;
 		}
 	}
-	this.content_turno.textContent=((this.Diccionario==0)?"<~":"~>")+" Turno: "+this.turno;
+	this.content_turno.textContent=((this.direccion==0)?"<~":"~>")+" Turno: "+this.turno;
 }
 
 function tomarMonto(num=1,conta=0,cambio=true){
