@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded",()=>{
 			}
 		});
 	}
-	// 4 mas4 y de cambio
+	// 4 mas4 y de cambio (pendiente)
 	// Carta volteada
 	this.template_carta.getElementById("carta").setAttribute("name","cartas_monto");
 	this.template_carta.getElementById("carta").style.background="#353535";
